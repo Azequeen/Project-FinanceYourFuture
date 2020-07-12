@@ -314,6 +314,19 @@ app.on('ready', () => {
 				settingsWin.totalCPUs = totalCPUs;
 			}
 		},
+		{
+			label: 'Activity',
+			click(){
+				let activityWin = makeWindow('activity.html',{
+					width: 300,
+					height: 284,
+					resizable: false,
+					minimizable: false,
+					maximizable: false
+				});
+
+			}
+		},
 		// {
 		//   label: 'Check For Updates',
 		//   click: checkUpdates
